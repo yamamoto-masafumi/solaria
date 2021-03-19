@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>銀座ソラリア</title>
   
   <!-- Swiper系 -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
@@ -24,16 +24,14 @@
   
   <section class="FV">
     <div class="FV_text_img">
-      <img src="./images/fv-body-control.png" alt="">
+      <img class="sp-hidden" src="./images/fv-bodycontrol-pc.png" alt="">
+      <img class="pc-hidden" src="./images/fv-bodycontrol-sp.png" alt="">
     </div>
     <div class="FV_medal_img">
       <img src="./images/fv-medal.png" alt="">
     </div>
     <div class="FV_btn_img">
-      <img src="./images/fv-button.png" alt="">
-    </div>
-    <div class="FV_img_left">
-      <img src="./images/fv-item.png" alt="">
+      <a href="https://ginza-solaria.com/contact/"><img src="./images/fv-button.png" alt=""></a>
     </div>
     <div class="FV_img_right">
       <img src="./images/fv-supplement.png" alt="">
@@ -127,7 +125,7 @@
       <h3 class="voice_title">お客様の声</h3>
     </div>
     
-    <div class="voice_slider">
+    <!-- <div class="voice_slider">
       <div class="voice_slider_wrap">
         <div class="swiper-container swiper-container1">
           <div class="swiper-wrapper">
@@ -153,32 +151,31 @@
             </div>
             
           </div>
-          <!-- Add Pagination -->
+          
           <div class="swiper-pagination"></div>
         </div>
         <div class="swiper-button-prev prev-btn1"></div>
         <div class="swiper-button-next next-btn1"></div>
       </div>
+    </div> -->
+    
+    <div class="voice_inner">
+      <div class="voice_inner_left">
+        <p class="voice_left_head">50代男性</p>
+        <div class="voice_left_img">
+          <img src="./images/Before-50-male.png" alt="">
+          <img class="voice_arrow" src="./images/customer-voice-arrow.png" alt="">
+          <img src="./images/After-50-male.png" alt="">
+        </div>
+        <p class="voice_left_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="voice_inner_right">
+        <p class="voice_right_head">CTスキャン画像の推移</p>
+        <img class="voice_right_img" src="./images/ct.png" alt="">
+        <p class="voice_right_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
     </div>
   </section>
-  
-  <script>
-    var voice = new Swiper('.swiper-container1', {
-      allowTouchMove: true,
-      navigation: {
-        nextEl: '.next-btn1',
-        prevEl: '.prev-btn1',
-      },
-      // spaceBetween: 10,
-      slidesPerView: 1,
-      breakpoints: {
-        767: {
-          spaceBetween: 10,
-          slidesPerView: 2,
-        },
-      }
-    });
-  </script>
   
   <section class="mechanism">
     <div class="sec_title_wrapper">
@@ -323,7 +320,69 @@
       医師、管理栄養⼠によるメディケーション・ナビゲーションで、<br class="pc-br">
       ”ずっとスリムに、より若く”を本格的にご提供いたします。
     </p>
+    
+    
+    <div class="example_img">
+      <p class="example_img_head">体重の変動推移例</p>
+      
+      
+      <div class="example_slider">
+        <div class="example_slider_wrap">
+          <div class="swiper-container swiper-container4">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <div class="example_card">
+                  <img src="./images/chart-A.png" alt="">
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="example_card">
+                  <img src="./images/chart-B.png" alt="">
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="example_card">
+                  <img src="./images/chart-C.png" alt="">
+                </div>
+              </div>
+              
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev prev-btn4 pc-hidden"></div>
+          <div class="swiper-button-next next-btn4 pc-hidden"></div>
+        </div>
+      </div>
+      
+      
+    </div>
   </section>
+  
+  <script>
+    var example = new Swiper('.swiper-container4', {
+      allowTouchMove: true,
+      navigation: {
+        nextEl: '.next-btn4',
+        prevEl: '.prev-btn4',
+      },
+      spaceBetween: 10,
+      slidesPerView: 1,
+      breakpoints: {
+        767: {
+          spaceBetween: 10,
+          slidesPerView: 2,
+        },
+        1050: {
+          spaceBetween: 10,
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
 
   <section class="price">
     <div class="sec_title_wrapper">
