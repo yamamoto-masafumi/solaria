@@ -69,6 +69,14 @@ body {
   display: block;
 }
 
+.pc_br {
+  display: block;
+}
+
+.sp_br {
+  display: none;
+}
+
 @media screen and (max-width:768px){
   .pc-hidden {
     display: block;
@@ -76,6 +84,14 @@ body {
   
   .sp-hidden {
     display: none;
+  }
+  
+  .pc_br {
+    display: none;
+  }
+  
+  .sp_br {
+    display: block;
   }
 }
 
@@ -96,7 +112,7 @@ body {
 .sec_title_l .sec_title_border_l {
   border-top: 4px solid #D3C17E;
   border-bottom: 4px solid #D3C17E;
-  padding: 10px 0;
+  padding: 10px 30px;
 }
 
 .sec_title_d {
@@ -112,7 +128,7 @@ body {
 .sec_title_d .sec_title_border_d {
   border-top: 4px solid #9C8943;
   border-bottom: 4px solid #9C8943;
-  padding: 10px 0;
+  padding: 10px 30px;
 }
 
 .sec_title_l span,.sec_title_d span {
@@ -138,7 +154,7 @@ body {
   .sec_title_l .sec_title_border_l {
     border-top: 3px solid #D3C17E;
     border-bottom: 3px solid #D3C17E;
-    padding: 5px 0px 10px;
+    padding: 5px 20px 10px;
   }
   
   .sec_title_d {
@@ -152,7 +168,7 @@ body {
   .sec_title_d .sec_title_border_d {
     border-top: 3px solid #9C8943;
     border-bottom: 3px solid #9C8943;
-    padding: 5px 0 10px;
+    padding: 5px 20px 10px;
   }
   
   .sec_title_l span,.sec_title_d span {
@@ -187,7 +203,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 50px;
   width: 100vw;
   height: 114px;
   background-color: #ffffff;
@@ -198,6 +214,32 @@ body {
 .header .header_logo {
   max-width: 400px;
   width: 50%;
+}
+
+.header .header_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header_tel {
+  position: relative;
+  font-size: 26px;
+  color: #3B351C;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.header .header_tel:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../images/header-tel.png) no-repeat center;
+  background-size: cover;
 }
 
 .header .header_formbtn {
@@ -211,7 +253,7 @@ body {
   }
   
   .header a {
-    width: 40%;
+    width: 100%;
     max-width: 140px;
   }
 }
@@ -291,6 +333,12 @@ body {
     margin: 0 auto;
     padding-bottom: 20px;
   }
+  
+  .FV .FV_img_right {
+    bottom: 210px;
+    right: 0;
+    width: 200px;
+  }
 }
 
 @media screen and (max-width:415px){
@@ -309,6 +357,7 @@ body {
   
   .FV .FV_img_right {
     bottom: 240px;
+    right: 7%;
     width: 100px;
   }
 }
@@ -370,7 +419,7 @@ body {
   
   .about .about_content {
     margin: 0 auto 20px;
-    padding: 65px 20px;
+    padding: 65px 50px;
     width: 91vw;
     background-image: url(../images/gold-frame-about-sp.png);
     background-size: 600px 100%;
@@ -770,6 +819,7 @@ body {
   
   .voice .voice_inner_right {
     margin: 0 auto;
+    max-width: 400px;
     width: 90%;
   }
   
@@ -1061,7 +1111,7 @@ body {
   margin: 0 auto 50px;
   max-width: 500px;
   width: 100%;
-  padding: 15px 30px;
+  padding: 15px;
   font-size: 16px;
   line-height: 1.5;
   border: 1px solid #D3C17E;
@@ -1221,12 +1271,18 @@ body {
 
 .price .price_inner_content .price_inner_text {
   background-color: #F2EFEA;
-  padding: 50px;
+  padding: 50px 50px 0;
 }
 
 .price .price_inner_content .price_inner_text .price_inner_text_img {
+  margin-bottom: 30px;
   padding-bottom: 15px;
   border-bottom: 3px solid #707070;
+}
+
+.price .price_inner_content .price_inner_text .price_inner_text_medal {
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 @media screen and (max-width:768px){
@@ -1330,11 +1386,7 @@ body {
   .information .map_bottom {
     text-align: center;
   }
-  
-  .information .map_bottom iframe{
-    width: 300px!important;
-    height: 300px!important;
-  }
+
   
   .information .information_title {
     margin-bottom: 25px;
@@ -1354,6 +1406,11 @@ body {
   
   .information .information_bottom_text {
     font-size: 14px;
+  }
+  
+  .information .map_bottom iframe{
+    width: 300px!important;
+    height: 300px!important;
   }
 }
 
