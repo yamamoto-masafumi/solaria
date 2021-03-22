@@ -1275,9 +1275,16 @@ body {
 }
 
 .price .price_inner_content .price_inner_text .price_inner_text_img {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #707070;
+  border-bottom: 6px solid #6C380F;
+}
+
+.price .price_inner_content .price_inner_text .price_inner_text_line {
+  margin-bottom: 30px;
+  height: 3px;
+  width: 100%;
+  background-color: #6C380F;
 }
 
 .price .price_inner_content .price_inner_text .price_inner_text_medal {
@@ -1312,7 +1319,14 @@ body {
   }
   
   .price .price_inner_content .price_inner_text .price_inner_text_img {
-    padding-bottom: 10px;
+    margin-bottom: 3px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #6C380F;
+  }
+  
+  .price .price_inner_content .price_inner_text .price_inner_text_line {
+    margin-bottom: 10px;
+    height: 1px;
   }
 }
 
