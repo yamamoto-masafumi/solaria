@@ -65,6 +65,10 @@ body {
   font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
 
+.hidden{
+  display: none;
+}
+
 .pc-hidden {
   display: none; 
   width: 180%;
@@ -104,6 +108,7 @@ body {
 
 .sec_title_wrapper {
   text-align: center;
+  position: relative;
 }
 
 .sec_title_l {
@@ -785,6 +790,12 @@ body {
   width: 40%;
 }
 
+.voice .voice_inner_left .more{
+  display: block;
+  text-align: right;
+  cursor: pointer;
+}
+
 .voice .voice_inner_right {
   max-width: 600px;
   width: 60%;
@@ -844,8 +855,9 @@ body {
 }
 
 .voice-frame{
-  /* position: relative; */
-  top:10px;
+  position: absolute;
+  top:0;
+  z-index: -1;
 }
 
 
