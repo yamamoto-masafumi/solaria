@@ -52,7 +52,11 @@ table {
 
 img {
   display: block;
+  /* width: 100%; */
   width: 100%;
+  
+
+
 }
 
 /**************** COMMON ****************/
@@ -62,7 +66,10 @@ body {
 }
 
 .pc-hidden {
-  display: none;
+  display: none; 
+  width: 180%;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .sp-hidden {
@@ -127,8 +134,9 @@ body {
 
 .sec_title_d .sec_title_border_d {
   border-top: 4px solid #9C8943;
-  border-bottom: 4px solid #9C8943;
-  padding: 10px 30px;
+  border-bottom: 4px solid #9C8943; 
+  /* padding: 10px 30px; */
+  padding: 8px 100px;
 }
 
 .sec_title_l span,.sec_title_d span {
@@ -140,7 +148,7 @@ body {
 .sec_text {
   margin-bottom: 50px;
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 @media screen and (max-width:768px){
@@ -152,9 +160,10 @@ body {
   }
   
   .sec_title_l .sec_title_border_l {
-    border-top: 3px solid #D3C17E;
+    border-top: 2px solid #D3C17E;
     border-bottom: 3px solid #D3C17E;
-    padding: 5px 20px 10px;
+    /* padding: 5px 20px 10px; */
+    padding: 5px 20px 5px;
   }
   
   .sec_title_d {
@@ -168,7 +177,7 @@ body {
   .sec_title_d .sec_title_border_d {
     border-top: 3px solid #9C8943;
     border-bottom: 3px solid #9C8943;
-    padding: 5px 20px 10px;
+    padding: 5px 20px 5px;
   }
   
   .sec_title_l span,.sec_title_d span {
@@ -199,7 +208,8 @@ body {
 .header {
   position: fixed;
   top: 0;
-  z-index: 10;
+  /* z-index: 10; */
+  z-index: 30;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -289,11 +299,13 @@ body {
 
 .FV .FV_medal_img {
   position: absolute;
-  top: 67%;
+  /* top: 67%; */
+  top:65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 400px;
+  /* max-width: 400px; */
+  max-width: 380px;
   width: 100%;
 }
 
@@ -470,6 +482,10 @@ body {
   background-color: #F1EEEB;
 }
 
+.QA{
+  font-family: "al fresco";
+}
+
 .problem .problem_inner {
   display: flex;
   justify-content: space-between;
@@ -535,6 +551,7 @@ body {
   
   .problem .problem_inner .problem_item {
     font-size: 14px;
+    font-weight: 300;
     padding-left: 30px;
     background-size: 16px;
   }
@@ -725,6 +742,10 @@ body {
   padding: 50px;
 }
 
+/* .voice-tilte .img{
+  top: 10%;
+} */
+
 .voice .voice_title {
   display: inline-block;
   margin-bottom: 50px;
@@ -732,6 +753,19 @@ body {
   font-size: 40px;
   font-weight: bold;
 }
+
+/* <!-- <続きを読む1> --> */
+.voice-text{
+  display: none;
+}
+.voice_left_text1:target + .more2{
+  display: block;
+}
+.voice_left_text1{
+    position: fixed;
+    top: 0;
+}
+/* <!-- <続きを読む1> --> */
 
 .voice .voice_inner {
   /* box-sizing: border-box; */
@@ -785,6 +819,7 @@ body {
 
 .voice .voice_right_img {
   margin-bottom: 30px;
+  width: 600px;
   height: 170px;
 }
 
@@ -795,9 +830,28 @@ body {
   margin-bottom: 30px;
 }
 
+.voice_right_text{
+  display: inline-block;
+  margin-left:15px ;
+  
+}
+.fat-box .text-left{
+  margin-left: 0;
+}
+
+.fat-box{
+  padding:0 30px;
+}
+
+.voice-frame{
+  /* position: relative; */
+  top:10px;
+}
+
+
 @media screen and (max-width:768px){
   .voice {
-    padding: 25px 0;
+    padding: 0 35px;
   }
   
   .voice .voice_title {
@@ -838,10 +892,16 @@ body {
   
   .voice .voice_left_text,.voice .voice_right_text{
     font-size: 14px;
+    font-weight: 550;
+    /* padding-left: 10px;
+    padding-right:10px; */
   }
   
   .voice .voice_right_img {
     height: 110px;
+    width: 280px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
   }
   
   .voice .voice_left_img {
@@ -937,6 +997,8 @@ body {
   line-height: 1.5;
 }
 
+
+
 .mechanism_slider .swiper-button-next {
   background-image: url(../images/right-point1.png)!important;
   width: 45px;
@@ -979,13 +1041,16 @@ body {
   
   .mechanism_slider .swiper-slide .mechanism_card_text {
     font-size: 14px;
+    font-weight: 500;
   }
+
+  
 }
 
 /**************** PROGRAM ****************/
 .program {
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px; 
   width: 85vw;
   background-color: #F1EEEB;
 }
@@ -1096,8 +1161,12 @@ body {
   padding: 50px 0;
 }
 
-.example .sec_text {
-  line-height: 2;
+/* .example .sec_text {
+  /* line-height: 2; */
+/* } */
+
+.sec_text{
+  line-height: 1.5;
 }
 
 .example .example_inner {
@@ -1129,7 +1198,7 @@ body {
 }
 
 .example_img {
-  margin: 0 auto;
+  margin: 0 auto; 
   padding: 50px;
   width: 85vw;
   background-color: #F1EEEB;
@@ -1140,6 +1209,8 @@ body {
   text-align: center;
   font-size: 26px;
 }
+
+
 
 .example .example_slider {
   margin: 0 auto;
@@ -1162,6 +1233,8 @@ body {
 
 .example_slider .swiper-slide img {
   height: 300px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
 }
 
 .example_slider .swiper-button-next {
@@ -1278,6 +1351,7 @@ body {
   margin-bottom: 5px;
   padding-bottom: 15px;
   border-bottom: 6px solid #6C380F;
+  width: 100%;
 }
 
 .price .price_inner_content .price_inner_text .price_inner_text_line {
@@ -1290,6 +1364,8 @@ body {
 .price .price_inner_content .price_inner_text .price_inner_text_medal {
   margin: 0 auto;
   max-width: 400px;
+  /* height: 125px; */
+  padding-bottom: 25px;
 }
 
 @media screen and (max-width:768px){
@@ -1309,6 +1385,7 @@ body {
   .price .price_inner_content .price_inner_img {
     max-width: 300px;
     width: 100%;
+    
   }
   
   .price .price_inner_content .price_inner_text {
@@ -1320,8 +1397,19 @@ body {
   
   .price .price_inner_content .price_inner_text .price_inner_text_img {
     margin-bottom: 3px;
-    padding-bottom: 2px;
+    /* padding-bottom: 2px;  */
+    padding: auto;
+    
     border-bottom: 3px solid #6C380F;
+    width:170px;
+  }
+
+  /* .price .price_inner_text_img {
+    padding: auto;
+  }  */
+  
+  .price .price_inner_text_medal{
+    width: 170px;
   }
   
   .price .price_inner_content .price_inner_text .price_inner_text_line {
@@ -1501,12 +1589,14 @@ body {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-weight: 500;
   }
   
   .footer .footer_inner .footer_inner_text_desc {
     font-size: 14px;
     text-align: center;
     padding: 0 20px;
+    font-weight: 500;
   }
   
   .footer .footer_logo_wrapper {
