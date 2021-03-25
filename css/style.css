@@ -78,6 +78,7 @@ body {
   width: 100%;
   /* margin-left: auto;
   margin-right: auto; */
+  
 }
 
 .sp-hidden {
@@ -197,6 +198,12 @@ body {
     margin-bottom: 25px;
     font-size: 14px;
   }
+
+  .sec_title_wrapper {
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+  }
 }
 
 .sp-br {
@@ -210,6 +217,12 @@ body {
 
   .sp-br {
     display: block;
+  }
+
+  .sec_title_wrapper {
+    text-align: center;
+    position: relative;
+    bottom: 5px;
   }
 }
 
@@ -1026,7 +1039,7 @@ body {
   height: 70px;
   background-color: #ffffff;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 
@@ -1063,7 +1076,10 @@ body {
     
   }
 
- 
+  .mechanism .mechanism_card_text{
+    line-height: 1;
+  }
+  
 }
 
 @media screen and (max-width:415px){
@@ -1077,6 +1093,7 @@ body {
   .mechanism_slider .swiper-slide .mechanism_card_text {
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.2;
   }
 
   
@@ -1423,6 +1440,8 @@ body {
     width: 100%;
     
   }
+
+
   
   .price .price_inner_content .price_inner_text {
     background-color: #F2EFEA;
@@ -1432,36 +1451,68 @@ body {
   }
   
   .price .price_inner_content .price_inner_text .price_inner_text_img {
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
     /* padding-bottom: 2px;  */
+    margin: 0 auto;
     padding: auto;
-    
     border-bottom: 3px solid #6C380F;
-    width:170px;
-  }
-
-  /* .price .price_inner_text_img {
-    padding: auto;
-  }  */
-  
-  .price .price_inner_text_medal{
-    width: 170px;
+    
+    
   }
   
   .price .price_inner_content .price_inner_text .price_inner_text_line {
-    margin-bottom: 10px;
-    height: 1px;
+    /* margin-bottom: 30px; */
+    height: 3px;
+    width: 100%;
+    background-color: #6C380F;
+    margin:0
   }
+
+   .price .price_inner_text_medal{
+      position: relative;
+      top: 30px;
+    }
+    
+    .price .price_inner_text_img{
+        position: relative;
+        bottom: 1px;
+      } 
+}
+
+  
+  
+  
+  
+  
+  
 }
 
 @media screen and (max-width:415px){
   .price .price_inner {
-    padding: 30px 0;
+    padding: 30px 0; 
   }
   
   .price .price_inner_content .price_inner_text {
-    width: 190px;
+    width: 150px;
+    height: 120px;
   }
+
+/* .price .price_inner_text_medal{
+  position: relative;
+  bottom: 23px;
+}
+
+  .price .price_inner_text_img{
+    position: relative;
+    top: 2px;
+  }  */
+
+  .price .price_inner_content .price_inner_text .price_inner_text_line {
+    margin-bottom: 30px;
+    height: 3px;
+    width: 100%;
+    background-color: #6C380F;
+}
 }
 
 /**************** INFORMATION ****************/
