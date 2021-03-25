@@ -71,7 +71,7 @@ body {
 
 .pc-hidden {
   display: none; 
-  width: 180%;
+  width: 100%;
   /* margin-left: auto;
   margin-right: auto; */
 }
@@ -356,6 +356,12 @@ body {
     right: 0;
     width: 200px;
   }
+
+  /* .pc-hidden .img{
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  } */
 }
 
 @media screen and (max-width:415px){
@@ -851,13 +857,17 @@ body {
 }
 
 .fat-box{
-  padding:0 30px;
+  padding:0 15px;
 }
 
 .voice-frame{
   position: absolute;
   top:0;
   z-index: -1;
+}
+
+.sp-voice{
+
 }
 
 
@@ -918,6 +928,10 @@ body {
   
   .voice .voice_left_img {
     margin-bottom: 15px;
+  }
+
+  .sp-voice .img{
+   
   }
 }
 
@@ -1040,7 +1054,10 @@ body {
   
   .mechanism_slider .swiper-wrapper {
     justify-content: inherit;
+    
   }
+
+ 
 }
 
 @media screen and (max-width:415px){
@@ -1346,6 +1363,7 @@ body {
 
 .price .price_inner_content .price_inner_img {
   max-width: 300px;
+  display:flex;
   width: 100%;
 }
 
