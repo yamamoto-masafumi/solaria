@@ -65,6 +65,10 @@ body {
   font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
 
+.active{
+  display: block;
+}
+
 .hidden{
   display: none;
 }
@@ -797,7 +801,6 @@ body {
 }
 
 .voice .voice_inner_left .more{
-  display: block;
   text-align: right;
   cursor: pointer;
 }
@@ -836,8 +839,6 @@ body {
 
 .voice .voice_right_img {
   margin-bottom: 30px;
-  width: 600px;
-  height: 170px;
 }
 
 .voice .voice_left_img {
@@ -858,6 +859,9 @@ body {
 
 .fat-box{
   padding:0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .voice-frame{
@@ -919,19 +923,8 @@ body {
     padding-right:10px; */
   }
   
-  .voice .voice_right_img {
-    height: 110px;
-    width: 280px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-  }
-  
   .voice .voice_left_img {
     margin-bottom: 15px;
-  }
-
-  .sp-voice .img{
-   
   }
 }
 
@@ -981,6 +974,19 @@ body {
   
   .voice_slider .swiper-button-next:after,.voice_slider .swiper-button-prev:after {
     content: "none"!important;
+  }
+
+  .voice .voice_right_img {
+    width: 50%;
+  }
+  
+  .fat-box{
+    flex-direction: column;
+  }
+
+  .fat-box .fat-box-card{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
